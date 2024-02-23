@@ -28,3 +28,12 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+Answer:
+The core calculation for the recursive Fibonacci sequence is that fibArr[i] = fibArr[i - 2] + fibArr[i - 1].
+This line ensures that each time the for-loop is called, the value in the index is equal to the sum of the
+index two spaces behind and the index one space behind. With this line, the Fibonacci sequence is correctly
+calculated for all values.
+In the case where there is no indexes behind (index = 0) or only one index behind (index = 1), the program 
+uses special if-statements that either return the array when it has only has that one element [0] or when 
+the array has only the two elements [0, 1].
