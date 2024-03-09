@@ -37,3 +37,6 @@ calculated for all values.
 In the case where there is no indexes behind (index = 0) or only one index behind (index = 1), the program 
 uses special if-statements that either return the array when it has only has that one element [0] or when 
 the array has only the two elements [0, 1].
+The invariant is that we know the two numbers in the Fibonacci sequence that come before the number being 
+calculated, so through each iteration of the loop we are able to calculate this next Fibonacci number using 
+these previous two known numbers.
